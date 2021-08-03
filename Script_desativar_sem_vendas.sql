@@ -1,13 +1,11 @@
 /* script para desativar os produtos que não tiveram compra e venda*/
 
-create view vw_inativos(idproduto) as
-
+create view vw_inativos (idproduto) AS
 select p.idproduto from produto p
 left join itemsaida s
 on p.idproduto = s.idproduto
 where not p.unidademedida='KG'
-and p.ultimadataentrada is null
-order by p.idproduto
+and p.ultimadataentrada is null;
 
 commit
 
