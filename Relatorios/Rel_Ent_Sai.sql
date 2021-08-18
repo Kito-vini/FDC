@@ -2,12 +2,12 @@
 
 select p.idproduto codigo,
 p.descricaoproduto nome,
-sum(e.qtde) entrada,
+(e.qtde) entrada,
 sum(s.qtde) saida,
-(sum(e.qtde)- sum(s.qtde)) saldo_de_estoque
+(e.qtde)- sum(s.qtde) saldo_de_estoque
 from produto p
 inner join itementrada e on p.idproduto = e.idproduto
 inner join itemsaida s on p.idproduto = s.idproduto
 where e.da between :data_inicial and :data_final
-group by p.idproduto, p.descricaoproduto
+group by p.idproduto, p.descricaoproduto, e.qtde
 order by p.descricaoproduto
