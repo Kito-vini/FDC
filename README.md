@@ -4,4 +4,5 @@
 
 # My skills with SQL
 
+ main
 * I currently work with software support and have some projects in SQL, such as reports, maintenance scripts, analysis queries, among others. These procedures were performed only by the software developer, but my desire to evolve and my attitude changed the scenario and the level of support 1 within the company.
