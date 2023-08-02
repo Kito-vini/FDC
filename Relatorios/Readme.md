@@ -1,0 +1,1 @@
+## Relatório de entradas com inclusão da coluna de base de cálculo de ICMS com filtros por Filial e Período, incluindo apenas NFe autorizadas
